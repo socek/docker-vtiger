@@ -1,0 +1,6 @@
+fpm:
+    build: .
+    ports:
+        - "9010:9000"
+    volumes:
+        - ./src:/var/www2/
