@@ -1,5 +1,6 @@
 fpm:
     build: .
+    user: www-data
     ports:
         - "9010:9000"
     volumes:

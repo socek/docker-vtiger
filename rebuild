@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf src/*
+tar -C src -zxf vtigercrm6.4.0.tar.gz
+mv src/vtigercrm/* src
+rm -rf src/vtigercrm
+chmod 777 src -R
