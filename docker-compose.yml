@@ -2,6 +2,6 @@ fpm:
     build: .
     user: www-data
     ports:
-        - "9010:9000"
+        - "8000:9000"
     volumes:
         - ./src:/var/www2/
