@@ -21,3 +21,4 @@ RUN docker-php-ext-configure imap --with-imap-ssl --with-kerberos \
     && docker-php-ext-install -j$(nproc) zip
 RUN docker-php-ext-install -j$(nproc) imap
 COPY php.ini /usr/local/etc/php/
+COPY fpm.conf /usr/local/etc/php-fpm.d/www.conf
